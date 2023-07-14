@@ -1,0 +1,35 @@
+# Definición de GIT
+
+GIT es un gestor de versión, el cual nos sirve para:
+
+* Entender qué cambios se realizan en una versión del programa
+* Porqué los realizan
+* Quién los realiza
+* Cuándo los realizan
+
+Es un sistema de control de versiones distribuído, es decir, que la copia de las versiones
+no sólo se realiza en el servidor, sino en todos los dispositivos que tengan acceso a ese
+repositorio. Y de esta forma, se puede trabajar de forma segura tanto en local como remoto.
+
+# ¿Qué es un repositorio?
+
+Un repositorio es una carpeta en donde se almacena un proyecto o archivos, y en la cual
+se crea una carpeta oculta .git que almacena todas las configuraciones e historial de cambios de
+del repositorio.
+
+# Áreas de git
+
+# Área de trabajo
+Es el código que actualmente se está modificando
+
+# Área de staging
+Es el código que se prepara para ser parte del repositorio
+
+# Área de repositorio
+Es el código que ya hace parte del historial de versiones
+del repositorio
+
+# Commit
+Es la "foto" o versión que se le toma al código y que hace parte del
+historial de versiones.
+

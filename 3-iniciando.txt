@@ -1,0 +1,29 @@
+# Inicializar un repositorio
+
+Esto convierte la carpeta actual de trabajo en un repositorio
+
+# Inicializar repositorio
+$git init
+
+# Agregar cambios(cambia de estado o área de trabajo los arhivos a staging)
+$git add
+- Agregar sólo un archivo
+$git add nombre_archivo
+- Agregar todos los archivos
+$git add .
+- Agregar los archivos que terminen en esa extensión
+$git add *.py
+- Agregar los archivo que sigan un patrón
+$git add src/component-*
+
+# Devolver cambios al área de trabajo
+$git reset
+
+# Ver el estado de los archivos
+$git status
+
+# Agregar cambios al repositorio(pasa del área staging al repositorio)
+$git commit -m "mensaje"
+
+# Listar los commits o cambios
+$git log

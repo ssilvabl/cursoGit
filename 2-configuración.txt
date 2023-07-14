@@ -1,0 +1,30 @@
+# Configurar llave SSH para GitHub
+
+# Generar llave SSH
+$ssh-keygen -t ed25519 -C "santiagosblandon@protonmail.com"
+
+# Iniciar el agente para gestionar las llaves ssh
+$eval "$(ssh-agent -s)"
+
+# Agregar al agente la llave generada
+$ssh-add ruta_de_la_llave(~/.ssh/id_ed25519)
+
+# Conectar llave ssh con la cuenta de GitHub
+- Linux
+$cat ~/.ssh/id_ed25519.pub
+- Windows
+$clip < ~/.ssh/id_ed25519.pub
+- MAC
+$pbcopy < ~/.ssh/id_ed25519.pub
+
+# Configurar llave ssh en GitHub
+1.Se debe ir a la sección de settigs
+2.Dar clic en el botón de New SSH key
+3.Pegar la clave SSH
+4.Se puede asignar un título a la llave
+5.Clic en Add SSH key
+
+# Validar conexión SSH
+$ssh -T git@github.com
+- Si se solicita confirmación se escribe "yes" en la terminal
+y debe aparecer Hi nombre_usuario

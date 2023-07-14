@@ -1,0 +1,19 @@
+# Enviar cambios al repositorio remoto
+
+Se pueden enviar cambios desde el repositorio local al repositorio remoto,
+y de esta misma forma, obtener cambios del servidor al repositorio local.
+
+# Establecer repositorio al que se enviarán los cambios
+$git remote add origin git@github.com:ssilvabl/cursoPython.git
+
+# Cambiar el nombre de la rama
+$git branch -M main
+
+# Enviar actualización a esa rama(sólo se ejecuta una vez de esta forma)
+$git push -u orgin nombre_rama
+
+# Actualizaciones futuras a esa misma rama
+$git push
+
+# Obtener actualización del repositorio remoto al repositorio local
+$git pull

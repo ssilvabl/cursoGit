@@ -1,0 +1,12 @@
+# Validar si está instalado Git
+$git -- version
+
+# Configurar credenciales de Git
+- Configurar nombre de usuario
+$git config --global user.name "nombre"
+
+- Configurar correo electrónico
+$git config --global user.email "correo@electrónico.com"
+
+# Validar configuración
+$git config --list
